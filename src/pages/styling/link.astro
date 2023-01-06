@@ -1,0 +1,13 @@
+---
+import PageLayout from '@/layouts/PageLayout.astro';
+
+const title = 'Astro styling: using link element';
+---
+
+<PageLayout title={title}>
+
+<link rel="stylesheet" href="/public/css/styles.css" slot="head" />
+
+<p class="text">This paragraph should turn green.</p>
+
+</PageLayout>
