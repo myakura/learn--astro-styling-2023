@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "astro": "astro",
+    "dev": "astro dev",
+    "build": "astro build"
   },
   "author": "Masataka Yakura",
   "license": "ISC",
