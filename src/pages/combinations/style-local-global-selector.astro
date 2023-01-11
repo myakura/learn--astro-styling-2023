@@ -1,0 +1,20 @@
+---
+import PageLayout from '@/layouts/PageLayout.astro';
+
+const title = 'Astro styling: local style followed by `:global()`';
+---
+
+<PageLayout title={title}>
+
+<p class="text">This paragraph should be orange.</p>
+
+</PageLayout>
+
+<style>
+.text {
+	color: navy;
+}
+:global(.text) {
+	color: orange;
+}
+</style>
