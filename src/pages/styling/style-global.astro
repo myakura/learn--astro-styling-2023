@@ -1,0 +1,17 @@
+---
+import PageLayout from '@/layouts/PageLayout.astro';
+
+const title = 'Astro styling: using style element with `is:global`';
+---
+
+<PageLayout title={title}>
+
+<p class="text">This paragraph should be crimson.</p>
+
+</PageLayout>
+
+<style is:global>
+.text {
+	color: crimson;
+}
+</style>
