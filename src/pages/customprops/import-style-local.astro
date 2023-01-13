@@ -1,0 +1,18 @@
+---
+import PageLayout from '@/layouts/PageLayout.astro';
+import '@/styles/colors.css';
+
+const title = 'Astro styling: import custom properties and use them from the style lement';
+---
+
+<PageLayout title={title}>
+
+<p class="text">This paragraph should be blue.</p>
+
+</PageLayout>
+
+<style>
+.text {
+	color: var(--color-blue, #0000ff);
+}
+</style>
