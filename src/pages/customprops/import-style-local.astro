@@ -2,7 +2,7 @@
 import PageLayout from '@/layouts/PageLayout.astro';
 import '@/styles/colors.css';
 
-const title = 'import custom properties and use them from the style lement';
+const title = 'using custom properties via `import` statement';
 ---
 
 <PageLayout title={title}>
@@ -13,6 +13,6 @@ const title = 'import custom properties and use them from the style lement';
 
 <style>
 .text {
-	color: var(--color-blue, #0000ff);
+	color: var(--color-blue, #ff0000);
 }
 </style>
