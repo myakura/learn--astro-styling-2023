@@ -1,0 +1,19 @@
+---
+import PageLayout from '@/layouts/PageLayout.astro';
+import '@/styles/colors.css';
+import '@/styles/colors2.css';
+
+const title = 'using custom properties via `import` statement';
+---
+
+<PageLayout title={title}>
+
+<p class="text">This paragraph should be yellow.</p>
+
+</PageLayout>
+
+<style>
+.text {
+	color: var(--color-yellow, #ff0000);
+}
+</style>
